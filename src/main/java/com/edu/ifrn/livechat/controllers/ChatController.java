@@ -15,9 +15,9 @@ import java.time.Instant;
 
 @Controller
 public class ChatController {
-    private SimpMessagingTemplate messagingTemplate;
-    private MessageService messageService;
-    private UserService userService;
+    private final SimpMessagingTemplate messagingTemplate;
+    private final MessageService messageService;
+    private final UserService userService;
 
     public ChatController(
             SimpMessagingTemplate messagingTemplate,
